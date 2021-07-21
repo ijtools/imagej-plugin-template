@@ -6,9 +6,9 @@ package inrae.pvpp.perigrain;
 import ij.IJ;
 import ij.plugin.PlugIn;
 import imago.app.ImagoApp;
-import imago.gui.ImagoEmptyFrame;
 import imago.gui.ImagoFrame;
 import imago.gui.ImagoGui;
+import imago.gui.frames.ImagoEmptyFrame;
 import imago.plugin.plugin.crop.CreateSurface3DPlugin;
 
 /**
