@@ -14,12 +14,12 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <!-- The identification of the plugin --> 
     <!-- Feel free to update to what you want, but remember that --> 
     <!-- ImageJ plugins require an underscore '_' in the name... --> 
-    <groupId>inrae.pvpp</groupId>
-    <artifactId>Perigrain_</artifactId>
+    <groupId>net.ijtools</groupId>
+    <artifactId>Plugin_Template</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>plugins/Perigrain_.jar</name>
-    <description>Utilities for the Perigrain project</description>
+    <name>plugins/Plugin_Template.jar</name>
+    <description>Simple project template for ImageJ plugins</description>
 
     <dependencies>
         <!-- When writing ImageJ/Fiji plugins, it is necessary to add a dependency 
