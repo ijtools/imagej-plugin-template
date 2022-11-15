@@ -12,13 +12,18 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     </parent>
     
     <!-- The identification of the plugin --> 
+    <!-- Group can be related to organisation --> 
+    <groupId>net.ijtools</groupId>
+    <!-- Artifact is the base name of the generated jar. --> 
     <!-- Feel free to update to what you want, but remember that --> 
     <!-- ImageJ plugins require an underscore '_' in the name... --> 
-    <groupId>net.ijtools</groupId>
     <artifactId>Plugin_Template</artifactId>
+    <!-- Good practice are to use semantic versioning, --> 
+    <!-- and to remove the "-SNAPSHOT" suffix before releasing new version' --> 
     <version>0.0.1-SNAPSHOT</version>
-    
-    <name>plugins/Plugin_Template.jar</name>
+    <!-- The name of the project at it will appear in IDE or during compilation --> 
+    <!-- (may be different from artifactID) --> 
+    <name>Plugin_Template</name>
     <description>Simple project template for ImageJ plugins</description>
     
     <!-- Global settings for the project --> 
@@ -48,7 +53,6 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
         </dependency>
         
     </dependencies>
-    
     
     <build>
         
