@@ -17,10 +17,19 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <groupId>net.ijtools</groupId>
     <artifactId>Plugin_Template</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
+    
     <name>plugins/Plugin_Template.jar</name>
     <description>Simple project template for ImageJ plugins</description>
-
+    
+    <!-- Global settings for the project --> 
+    <properties>
+        <!-- Use a long-term support version for source --> 
+        <maven.compiler.source>1.17</maven.compiler.source>
+        <!-- Use 1.8 for target, to avoid compatibility issues--> 
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    
+    <!-- Specifies the libraries this project depends on --> 
     <dependencies>
         <!-- When writing ImageJ/Fiji plugins, it is necessary to add a dependency 
              to ImageJ jar -->
@@ -29,7 +38,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <artifactId>ij</artifactId>
             <version>${imagej1.version}</version>
         </dependency>
-    
+        
         <!-- Add a dependency to JUnit for unit tests --> 
         <dependency>
             <groupId>junit</groupId>
@@ -109,9 +118,8 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
               
         </plugins>
     </build>
-
+    
     <developers>
-        
         <developer>
             <id>dlegland</id>
             <name>David Legland</name>
@@ -122,9 +130,8 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                 <role>developer</role>
             </roles>
         </developer>
-
     </developers>
-
+    
     <repositories>
         <!-- NB: for project parent -->
         <repository>
@@ -132,6 +139,5 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <url>http://maven.imagej.net/content/groups/public</url>
         </repository>
     </repositories>
-
 
 </project>
