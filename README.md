@@ -16,7 +16,7 @@ The base configuration has few dependencies:
 
 Follow the steps:
 
-1. Use the "Use this stemplatge" button to create a new project within GitHub. Give it the name your choice.
+1. Use the "Use this template" button to create a new project within GitHub. Give it the name your choice.
 2. Clone the new project into the directory of your choice. 
 3. Edit the `pom.xml` file with the information specific to the project. 
 In particular:
